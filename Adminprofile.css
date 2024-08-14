@@ -1,0 +1,99 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #ccc;
+  margin: auto;
+  width: 70%;
+  height: 60vh;
+  margin-right: 300px;
+  overflow-y: auto;
+  margin-top: 5%;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section {
+  margin-bottom: 20px;
+}
+
+.profile-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.info-item {
+  margin-bottom: 15px;
+}
+
+.info-item label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.info-item input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.info-display {
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.info-display p {
+  margin: 10px 0;
+  color: #333;
+}
+
+.info-display p strong {
+  color: #333;
+}
+
+.save-button, .edit-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.save-button {
+  background-color: #007bff;
+}
+
+.edit-button {
+  background-color: #6c757d;
+}
+
+.save-button:hover, .edit-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .profile-container {
+    width: 60%;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .profile-container {
+    width: 50%;
+  }
+}

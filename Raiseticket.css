@@ -1,0 +1,107 @@
+.submit-ticket {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(45deg, #4f6857, #3714b6);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(245, 61, 61, 0.829);
+    position: relative;
+    overflow-y: auto;
+    max-height: 90vh; /* Adjusted height for responsiveness */
+}
+
+.submit-ticket h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.form-contain {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.submit-button,
+.canc-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover,
+.canc-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .submit-ticket {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .submit-ticket {
+        width: 95%;
+    }
+
+    .form-contain {
+        gap: 10px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .button-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .submit-ticket {
+        width: 100%;
+    }
+}

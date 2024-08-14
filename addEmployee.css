@@ -1,0 +1,144 @@
+/* addEmployee.css */
+.add-employee-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.add-employee-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.add-employee-input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.add-employee-label {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: white;
+  padding: 0 5px;
+  color: #aaa;
+  transition: top 0.3s, left 0.3s, font-size 0.3s;
+}
+
+.add-employee-input:focus + .add-employee-label,
+.add-employee-input:not(:placeholder-shown) + .add-employee-label {
+  top: -10px;
+  left: 10px;
+  font-size: 0.8em;
+  color: #007BFF;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Mobile devices */
+  h1 {
+      font-size: 1.5em;
+  }
+
+  .add-employee-container {
+      padding: 15px;
+  }
+
+  .add-employee-input {
+      padding: 8px;
+  }
+
+  button[type="submit"] {
+      padding: 8px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Small tablets */
+  h1 {
+      font-size: 1.75em;
+  }
+
+  .add-employee-container {
+      padding: 18px;
+  }
+
+  .add-employee-input {
+      padding: 9px;
+  }
+
+  button[type="submit"] {
+      padding: 9px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Tablets and small desktops */
+  h1 {
+      font-size: 2em;
+  }
+
+  .add-employee-container {
+      padding: 20px;
+  }
+
+  .add-employee-input {
+      padding: 10px;
+  }
+
+  button[type="submit"] {
+      padding: 10px;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* Desktops and larger screens */
+  h1 {
+      font-size: 2.5em;
+  }
+
+  .add-employee-container {
+      padding: 25px;
+  }
+
+  .add-employee-input {
+      padding: 12px;
+  }
+
+  button[type="submit"] {
+      padding: 12px;
+  }
+}
